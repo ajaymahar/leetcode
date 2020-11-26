@@ -35,13 +35,11 @@ class Solution:
 
         '''
 
-        # enumerate will return the index and the value
-        visited = {}  # keep track of all visited numbers
+        visited = {}
         for idx, num in enumerate(nums):
-            # checking if we have values in visited dict.
             if target - num in visited:
                 return [visited.get(target - num), idx]
-            visited[num] = idx  # if not add it to dict
+            visited[num] = idx
 
 
 if __name__ == "__main__":
