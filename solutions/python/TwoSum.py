@@ -1,6 +1,8 @@
 class Solution:
     def twoSum(self, nums, target):
         '''
+        # leetcode problem: https://leetcode.com/problems/two-sum/
+
         Method-1: Bruteforce
 
         time compx: O(n^2)
