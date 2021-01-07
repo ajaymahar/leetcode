@@ -35,6 +35,9 @@ Constraints:
 
 class Solution:
     def runningSum(self, nums: list) -> list:
+        '''Time: O(n) where n is numbers in a list.
+           Space: O(1)
+        '''
         for idx in range(1, len(nums)):
             nums[idx] += nums[idx - 1]
         return nums
